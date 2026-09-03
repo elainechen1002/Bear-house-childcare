@@ -71,8 +71,8 @@ export default function Home() {
 
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">Bear’s House · Burnaby, BC</p>
-          <h1 id="hero-title">Child care for ages 3–36 months.</h1>
+          <p className="eyebrow">Established in 2003 · Burnaby, BC</p>
+          <h1 id="hero-title">Bear’s House Child Care Centre</h1>
           <p className="lede">
             Bear’s House provides responsive care for children ages 3–36 months,
             with time to play, explore, rest, and build close relationships.
@@ -110,7 +110,7 @@ export default function Home() {
       <section className="facts-band" aria-label="Program at a glance">
         <div className="shell facts-grid">
           <div><Clock3 size={21} /><span><small>Open</small>Monday–Friday<br />8:30 a.m.–5:30 p.m.</span></div>
-          <div><span className="fact-number">3–36</span><span><small>Ages</small>Children 3–36 months</span></div>
+          <div><span className="fact-number">2003</span><span><small>Established</small>Caring for Burnaby families since 2003</span></div>
           <div><span className="fact-dot" aria-hidden="true" /><span><small>Every day</small>Nut-free and screen-free</span></div>
         </div>
       </section>
