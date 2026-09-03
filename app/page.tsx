@@ -72,10 +72,10 @@ export default function Home() {
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow">Bear’s House · Burnaby, BC</p>
-          <h1 id="hero-title">A cozy place to play, belong, and grow.</h1>
+          <h1 id="hero-title">Warm, play-based child care in Burnaby.</h1>
           <p className="lede">
-            Warm, responsive child care for little ones—built around play,
-            everyday discovery, and close relationships with families.
+            Bear’s House provides responsive care for children ages 3–36 months,
+            with time to play, explore, rest, and build close relationships.
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href={`tel:${siteConfig.phoneHref}`}>
@@ -134,10 +134,10 @@ export default function Home() {
             </div>
 
             <div className="development-grid" aria-label="Four areas of development">
-              <article><span>01</span><h3>Physical</h3><p>Movement, coordination, outdoor play, and healthy routines.</p></article>
-              <article><span>02</span><h3>Social</h3><p>Friendship, cooperation, communication, and belonging.</p></article>
-              <article><span>03</span><h3>Emotional</h3><p>Confidence, self-regulation, empathy, and expression.</p></article>
-              <article><span>04</span><h3>Cognitive</h3><p>Curiosity, problem-solving, creativity, and discovery.</p></article>
+              <article><h3>Physical</h3><p>Movement, coordination, outdoor play, and healthy routines.</p></article>
+              <article><h3>Social</h3><p>Friendship, cooperation, communication, and belonging.</p></article>
+              <article><h3>Emotional</h3><p>Confidence, self-regulation, empathy, and expression.</p></article>
+              <article><h3>Cognitive</h3><p>Curiosity, problem-solving, creativity, and discovery.</p></article>
             </div>
 
             <div className="qualified-card">
@@ -158,7 +158,7 @@ export default function Home() {
 
             <div className="guide-list">
               <details open>
-                <summary><span><b>01</b>A typical day</span><ChevronDown size={20} /></summary>
+                <summary><span>A typical day</span><ChevronDown size={20} /></summary>
                 <div className="schedule-wrap">
                   <p>The rhythm may shift with children’s needs, weather, and special activities.</p>
                   <div className="schedule">
@@ -170,7 +170,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>02</b>What to bring &amp; wear</span><ChevronDown size={20} /></summary>
+                <summary><span>What to bring &amp; wear</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Every day</h3><ul><li>Weather-appropriate clothing</li><li>Extra shirt, pants, underwear, and socks</li><li>Clearly label every item</li></ul></div>
                   <div><h3>Summer</h3><ul><li>Shorts and T-shirt</li><li>Sunhat and sunscreen</li></ul></div>
@@ -181,7 +181,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>03</b>Food, allergies &amp; illness</span><ChevronDown size={20} /></summary>
+                <summary><span>Food, allergies &amp; illness</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Nut-free facility</h3><p>No nuts or nut-containing products may enter the centre. Tell staff about all allergies and provide care plans and emergency medication when required.</p></div>
                   <div><h3>Lunches &amp; snacks</h3><p>Families provide nutritious food unless enrolled in a meal program. We encourage Canada’s Food Guide choices, and children do not share food.</p></div>
@@ -192,7 +192,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>04</b>Medication</span><ChevronDown size={20} /></summary>
+                <summary><span>Medication</span><ChevronDown size={20} /></summary>
                 <div className="details-copy">
                   <p>Medication is given only with written parental authorization and according to the child’s care plan or written instructions. It must:</p>
                   <ul className="check-list"><li><Check size={16} />Stay in its original labelled container</li><li><Check size={16} />Clearly show the child’s name</li><li><Check size={16} />Include dosage and instructions</li><li><Check size={16} />Be stored safely out of reach</li><li><Check size={16} />Be given only as instructed</li><li><Check size={16} />Be recorded with medication, dose, date, and time</li></ul>
@@ -200,7 +200,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>05</b>Safe pick-up &amp; custody</span><ChevronDown size={20} /></summary>
+                <summary><span>Safe pick-up &amp; custody</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Authorized people only</h3><p>Children are released only to a parent, guardian, or authorized person listed on the registration form. No child is released to anyone under age 16.</p></div>
                   <div><h3>Changes and safety</h3><p>Tell the centre before an alternate person picks up. We may refuse release when a person appears unable to care for or transport the child safely.</p></div>
@@ -209,7 +209,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>06</b>Behaviour guidance, play &amp; rest</span><ChevronDown size={20} /></summary>
+                <summary><span>Behaviour guidance, play &amp; rest</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Positive guidance</h3><p>We use clear expectations, positive language, choices, redirection, natural consequences, and opportunities to repair relationships. Physical punishment is never used.</p></div>
                   <div><h3>Active play</h3><p>Children develop movement, balance, and coordination, with approximately 60–90 minutes of outdoor active play daily when conditions permit.</p></div>
@@ -220,7 +220,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>07</b>Emergency procedures</span><ChevronDown size={20} /></summary>
+                <summary><span>Emergency procedures</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Prepared for</h3><p>Fire, earthquake, severe weather, utility failure, emergency closure, evacuation, relocation, family communication, and reunification.</p></div>
                   <div><h3>Practice</h3><p>Staff are trained, supplies are maintained, fire drills happen monthly, and other procedures are practised at least annually.</p></div>
@@ -230,7 +230,7 @@ export default function Home() {
               </details>
 
               <details>
-                <summary><span><b>08</b>Communication &amp; concerns</span><ChevronDown size={20} /></summary>
+                <summary><span>Communication &amp; concerns</span><ChevronDown size={20} /></summary>
                 <div className="detail-grid">
                   <div><h3>Staying in touch</h3><p>Updates come through daily conversations, parent-teacher meetings, information boards, newsletters, and written communication. Keep contact, emergency, and health information current.</p></div>
                   <div><h3>Resolving a concern</h3><p>First, speak directly with the staff member involved. Contact the Daycare Manager if more support is needed. We are committed to respectful, collaborative problem-solving.</p></div>
