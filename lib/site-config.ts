@@ -5,8 +5,5 @@ export const siteConfig = {
   phoneDisplay: "(604) 721-7488",
   phoneHref: "+16047217488",
   email: "bearhousebby@gmail.com",
-  addressLines: ["4609 Rumble Street", "Burnaby, BC V5J 2A8"],
-  mapUrl:
-    "https://www.google.com/maps/search/?api=1&query=4609+Rumble+Street+Burnaby+BC+V5J+2A8",
   hours: "Monday–Friday · 8:30 a.m.–5:30 p.m.",
 };
