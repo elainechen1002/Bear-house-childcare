@@ -4,7 +4,7 @@ export const siteConfig = {
   shortName: "Bear’s House",
   phoneDisplay: "(604) 721-7488",
   phoneHref: "+16047217488",
-  email: "auroramontessori18@gmail.com",
+  email: "bearhousebby@gmail.com",
   addressLines: ["4609 Rumble Street", "Burnaby, BC V5J 2A8"],
   mapUrl:
     "https://www.google.com/maps/search/?api=1&query=4609+Rumble+Street+Burnaby+BC+V5J+2A8",
