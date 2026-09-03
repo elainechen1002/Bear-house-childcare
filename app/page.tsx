@@ -4,7 +4,6 @@ import {
   ChevronDown,
   Clock3,
   Mail,
-  MapPin,
   Phone,
 } from "lucide-react";
 import { siteConfig } from "@/lib/site-config";
@@ -71,11 +70,11 @@ export default function Home() {
 
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
-          <p className="eyebrow">Established in 2003 · Burnaby, BC</p>
+          <p className="eyebrow">Serving Metro Vancouver since 2003</p>
           <h1 id="hero-title">Bear’s House Child Care Centre</h1>
           <p className="lede">
-            Bear’s House provides responsive care for children ages 3–36 months,
-            with time to play, explore, rest, and build close relationships.
+            Play-based care for children ages 3–36 months, with close communication
+            between families and educators across our Metro Vancouver locations.
           </p>
           <div className="hero-actions">
             <a className="button button--primary" href={`tel:${siteConfig.phoneHref}`}>
@@ -91,26 +90,21 @@ export default function Home() {
         </div>
 
         <figure className="hero-photo">
-          <a href={siteConfig.mapUrl} target="_blank" rel="noreferrer" aria-label="Open Bear’s House in Google Maps">
-            <img
-              src="/4609-rumble-street.jpg"
-              alt="Exterior of Bear’s House at 4609 Rumble Street in Burnaby"
-              width="1600"
-              height="900"
-              fetchPriority="high"
-            />
-          </a>
-          <figcaption>
-            <span><MapPin size={17} /> Our home on Rumble Street</span>
-            <a href={siteConfig.mapUrl} target="_blank" rel="noreferrer">Open in Google Maps <ArrowUpRight size={15} /></a>
-          </figcaption>
+          <img
+            src="/children-playing-playground.jpg"
+            alt="Children playing together on an outdoor playground"
+            width="1600"
+            height="1067"
+            fetchPriority="high"
+          />
+          <figcaption>Outdoor play is part of every day.</figcaption>
         </figure>
       </section>
 
       <section className="facts-band" aria-label="Program at a glance">
         <div className="shell facts-grid">
           <div><Clock3 size={21} /><span><small>Open</small>Monday–Friday<br />8:30 a.m.–5:30 p.m.</span></div>
-          <div><span className="fact-number">2003</span><span><small>Established</small>Caring for Burnaby families since 2003</span></div>
+          <div><span className="fact-number">2003</span><span><small>Established</small>Caring for Metro Vancouver families since 2003</span></div>
           <div><span className="fact-dot" aria-hidden="true" /><span><small>Every day</small>Nut-free and screen-free</span></div>
         </div>
       </section>
@@ -273,16 +267,13 @@ export default function Home() {
           <div className="contact-bears"><BearPair /></div>
           <p className="eyebrow">Contact</p>
           <h2>Ask about a space.</h2>
-          <p>Call, email, or open the location in Google Maps.</p>
+          <p>Call or email to ask about availability at our Metro Vancouver locations.</p>
           <div className="contact-links">
             <a className="contact-call" href={`tel:${siteConfig.phoneHref}`}>
               <Phone size={19} /><span><small>Call now</small>{siteConfig.phoneDisplay}</span><ArrowUpRight size={16} />
             </a>
             <a className="contact-email" href={`mailto:${siteConfig.email}?subject=Bear's House enrollment inquiry`}>
               <Mail size={19} /><span><small>Send an email</small>{siteConfig.email}</span><ArrowUpRight size={16} />
-            </a>
-            <a className="contact-map" href={siteConfig.mapUrl} target="_blank" rel="noreferrer">
-              <MapPin size={19} /><span><small>Google Maps</small>{siteConfig.addressLines[0]}<br />{siteConfig.addressLines[1]}</span><ArrowUpRight size={16} />
             </a>
           </div>
           <p className="contact-hours"><Clock3 size={15} /> {siteConfig.hours}</p>

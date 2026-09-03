@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Bear’s House Child Care Centre | Parent Hub",
   description:
-    "Program information, parent policies, fees, and enrollment details for Bear’s House Child Care Centre, serving Burnaby families since 2003.",
+    "Program information, parent policies, fees, and enrollment details for Bear’s House Child Care Centre, serving Metro Vancouver families since 2003.",
   icons: { icon: "/bear-left.png" },
 };
 
