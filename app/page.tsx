@@ -91,13 +91,13 @@ export default function Home() {
 
         <figure className="hero-photo">
           <img
-            src="/children-playing-playground.jpg"
-            alt="Children playing together on an outdoor playground"
+            src="/young-children-playing-toys.jpg"
+            alt="Young children playing with blocks and toys in a daycare classroom"
             width="1600"
             height="1067"
             fetchPriority="high"
           />
-          <figcaption>Outdoor play is part of every day.</figcaption>
+          <figcaption>Learning through play.</figcaption>
         </figure>
       </section>
 
