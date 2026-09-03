@@ -291,11 +291,7 @@ export default function Home() {
 
       <footer>
         <div className="shell">
-          <a className="brand" href="#top">
-            <BearPair small />
-            <span className="brand-copy"><strong>Bear’s House</strong><small>Child Care Centre</small></span>
-          </a>
-          <p>Parent information based on the Bear’s House Parent Handbook.</p>
+          <p>© 2026 Bear’s House Child Care Centre. All rights reserved.</p>
           <a href="#top">Back to top <ArrowUpRight size={15} /></a>
         </div>
       </footer>
