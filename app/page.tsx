@@ -72,7 +72,7 @@ export default function Home() {
       <section className="hero shell" aria-labelledby="hero-title">
         <div className="hero-copy">
           <p className="eyebrow">Bear’s House · Burnaby, BC</p>
-          <h1 id="hero-title">Warm, play-based child care in Burnaby.</h1>
+          <h1 id="hero-title">Child care for ages 3–36 months.</h1>
           <p className="lede">
             Bear’s House provides responsive care for children ages 3–36 months,
             with time to play, explore, rest, and build close relationships.
