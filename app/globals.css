@@ -205,7 +205,8 @@ img {
   background: var(--sky);
 }
 .hero-inner {
-  min-height: 430px;
+  min-height: calc(100vh - 77px);
+  min-height: calc(100svh - 77px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -886,7 +887,8 @@ footer > .shell > a:last-child {
 
 @media (max-width: 980px) {
   .hero-inner {
-    min-height: 400px;
+    min-height: calc(100vh - 77px);
+    min-height: calc(100svh - 77px);
   }
   .hero-copy {
     max-width: 790px;
@@ -943,7 +945,8 @@ footer > .shell > a:last-child {
     display: none;
   }
   .hero-inner {
-    min-height: 0;
+    min-height: calc(100vh - 77px);
+    min-height: calc(100svh - 77px);
     padding-block: 4rem;
   }
   .hero h1 {
