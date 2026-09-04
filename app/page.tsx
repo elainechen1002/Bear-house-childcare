@@ -79,28 +79,26 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-inner shell">
           <div className="hero-copy">
-            <p className="eyebrow">Serving Metro Vancouver since 2003</p>
+            <p className="eyebrow">Bear’s House · Serving families since 2003</p>
             <h1 id="hero-title">
-              <span>Bear’s House</span>
-              <span>Child Care Centre</span>
+              Child care for ages <span>3–36 months.</span>
             </h1>
             <p className="lede">
-              Play-based care for children ages 3–36 months, with close
-              communication between families and educators across our Metro
-              Vancouver locations.
+              Programs across Metro Vancouver, with open communication between
+              families and educators.
             </p>
             <div className="hero-actions">
               <a
                 className="button button--primary"
                 href={`tel:${siteConfig.phoneHref}`}
               >
-                <Phone size={18} /> Ask about a space
+                <Phone size={18} /> Call about enrollment
               </a>
               <a
                 className="button button--secondary"
                 href={`mailto:${siteConfig.email}?subject=Bear's House enrollment inquiry`}
               >
-                <Mail size={18} /> Email us
+                <Mail size={18} /> Email about enrollment
               </a>
             </div>
           </div>
@@ -113,10 +111,6 @@ export default function Home() {
               height="1052"
               fetchPriority="high"
             />
-            <figcaption>
-              <span>Our playground</span>
-              <span>Learning through play.</span>
-            </figcaption>
           </figure>
         </div>
       </section>
