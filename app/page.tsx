@@ -79,13 +79,11 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-inner shell">
           <div className="hero-copy">
-            <p className="eyebrow">Bear’s House · Serving families since 2003</p>
-            <h1 id="hero-title">
-              Child care for ages <span>3–36 months.</span>
-            </h1>
+            <p className="eyebrow">More than two decades of experience</p>
+            <h1 id="hero-title">Know your child is in good hands.</h1>
             <p className="lede">
-              Programs across Metro Vancouver, with open communication between
-              families and educators.
+              Bear’s House has cared for Metro Vancouver families since 2003,
+              with programs for children from 3 to 36 months.
             </p>
             <div className="hero-actions">
               <a
@@ -102,16 +100,6 @@ export default function Home() {
               </a>
             </div>
           </div>
-
-          <figure className="hero-photo">
-            <img
-              src="/bears-house-playground.jpg"
-              alt="Bear’s House outdoor playground with play structures and space for active play"
-              width="1400"
-              height="1052"
-              fetchPriority="high"
-            />
-          </figure>
         </div>
       </section>
 
@@ -164,16 +152,28 @@ export default function Home() {
                 </p>
               </div>
 
-              <figure className="program-photo">
-                <img
-                  src="/bears-house-learning-space.jpg"
-                  alt="A bright Bear’s House indoor learning space with toys, child-sized furniture, and play areas"
-                  width="1600"
-                  height="1139"
-                  loading="lazy"
-                />
-                <figcaption>Our indoor learning space.</figcaption>
-              </figure>
+              <div className="program-photos">
+                <figure>
+                  <img
+                    src="/bears-house-learning-space.jpg"
+                    alt="A bright Bear’s House indoor learning space with toys, child-sized furniture, and play areas"
+                    width="1600"
+                    height="1139"
+                    loading="lazy"
+                  />
+                  <figcaption>Our indoor learning space.</figcaption>
+                </figure>
+                <figure>
+                  <img
+                    src="/bears-house-playground.jpg"
+                    alt="Bear’s House outdoor playground with play structures and space for active play"
+                    width="1400"
+                    height="1052"
+                    loading="lazy"
+                  />
+                  <figcaption>Our outdoor playground.</figcaption>
+                </figure>
+              </div>
 
               <div
                 className="development-grid"
