@@ -3,16 +3,16 @@
 @import 'shadcn/tailwind.css';
 
 :root {
-  --cream: #f3f3ef;
+  --cream: #fffaf2;
   --paper: #ffffff;
-  --ink: #28282d;
-  --muted: #686a70;
-  --brown: #8c5e3b;
-  --coral: #f28a78;
-  --yellow: #f2cc66;
-  --sky: #8dcee2;
-  --mint: #b8dbc1;
-  --line: #d4d5d1;
+  --ink: #24304a;
+  --muted: #667187;
+  --brown: #9a673f;
+  --coral: #f17e6f;
+  --yellow: #f5c95f;
+  --sky: #73c0df;
+  --mint: #b6d9bf;
+  --line: #dfe3e8;
   --dark-line: rgba(255, 255, 255, 0.2);
   scroll-behavior: smooth;
 }
@@ -174,28 +174,24 @@ img {
   color: var(--ink);
 }
 .button--secondary {
-  border-color: rgba(255, 255, 255, 0.75);
-  color: white;
+  border-color: var(--line);
+  background: var(--paper);
+  color: var(--ink);
 }
 .button--secondary:hover {
-  background: white;
+  background: var(--paper);
   color: var(--ink);
 }
 
 .hero {
   position: relative;
   overflow: hidden;
-  background: var(--ink);
-  color: white;
+  background: var(--cream);
+  color: var(--ink);
 }
 .hero::before,
 .hero::after {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-  content: '';
-  opacity: 0.9;
+  display: none;
 }
 .hero::before {
   top: 16%;
@@ -208,12 +204,12 @@ img {
   background: var(--sky);
 }
 .hero-inner {
-  min-height: 670px;
+  min-height: 560px;
   display: grid;
   grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.82fr);
   align-items: center;
   gap: clamp(3rem, 6vw, 6rem);
-  padding-block: clamp(4.6rem, 8vw, 7.2rem);
+  padding-block: clamp(3.6rem, 6vw, 5.5rem);
 }
 .eyebrow {
   margin: 0 0 1rem;
@@ -224,16 +220,16 @@ img {
   text-transform: uppercase;
 }
 .hero .eyebrow {
-  color: var(--yellow);
+  color: var(--brown);
 }
 .hero h1 {
   max-width: 720px;
   margin: 0;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(4.5rem, 7vw, 7.1rem);
-  font-weight: 350;
-  line-height: 0.86;
-  letter-spacing: -0.055em;
+  font-size: clamp(3.15rem, 5vw, 4.75rem);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: -0.045em;
 }
 .hero h1 span {
   display: block;
@@ -244,8 +240,8 @@ img {
 .lede {
   max-width: 610px;
   margin: 1.8rem 0 0;
-  color: rgba(255, 255, 255, 0.78);
-  font-size: 1.15rem;
+  color: var(--muted);
+  font-size: 1.05rem;
   line-height: 1.55;
   letter-spacing: -0.018em;
 }
@@ -266,8 +262,8 @@ img {
   width: 100%;
   margin: 0;
   overflow: hidden;
-  border: 1px solid rgba(255, 255, 255, 0.55);
-  background: #111216;
+  border: 1px solid var(--line);
+  background: var(--paper);
   animation: hero-photo-in 850ms 100ms cubic-bezier(0.22, 1, 0.36, 1) both;
 }
 .hero-photo img {
@@ -350,7 +346,7 @@ img {
   scroll-margin-top: 5rem;
 }
 .section-inner {
-  padding-block: clamp(6rem, 10vw, 10rem);
+  padding-block: clamp(4.25rem, 7vw, 6.75rem);
 }
 .section h2,
 .contact-card h2 {
@@ -362,7 +358,7 @@ img {
 }
 .section h2 {
   max-width: 980px;
-  font-size: clamp(3.5rem, 6vw, 6rem);
+  font-size: clamp(2.5rem, 4vw, 3.85rem);
 }
 .section h2 span {
   color: var(--coral);
@@ -375,7 +371,7 @@ img {
 }
 
 .program-section {
-  background: #edeee9;
+  background: var(--cream);
 }
 .intro-grid {
   display: grid;
@@ -390,20 +386,36 @@ img {
 }
 .intro-grid p:first-child {
   color: var(--ink);
-  font-size: 1.32rem;
+  font-size: 1.16rem;
   line-height: 1.5;
   letter-spacing: -0.025em;
+}
+.program-photo {
+  width: min(760px, 78%);
+  margin: 3rem 0 0 auto;
+  border: 1px solid var(--line);
+  background: var(--paper);
+}
+.program-photo img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+}
+.program-photo figcaption {
+  padding: 0.7rem 0.9rem;
+  color: var(--muted);
+  font-size: 0.78rem;
 }
 .development-grid {
   counter-reset: area;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: clamp(4rem, 7vw, 6.5rem);
+  margin-top: clamp(3rem, 5vw, 4.75rem);
   border-block: 1px solid var(--line);
 }
 .development-grid article {
   counter-increment: area;
-  min-height: 225px;
+  min-height: 190px;
   padding: 1.6rem 1.5rem 1.8rem;
   border-right: 1px solid var(--line);
 }
@@ -425,7 +437,7 @@ img {
 .development-grid h3 {
   margin: 0 0 0.45rem;
   font-family: var(--font-display), Georgia, serif;
-  font-size: 1.75rem;
+  font-size: 1.45rem;
   font-weight: 450;
   line-height: 1.1;
 }
@@ -441,8 +453,8 @@ img {
   align-items: start;
   margin-top: 3.5rem;
   padding: clamp(2rem, 4vw, 3.5rem);
-  background: var(--ink);
-  color: white;
+  background: #e7f3ea;
+  color: var(--ink);
 }
 .qualified-title {
   display: flex;
@@ -462,36 +474,36 @@ img {
 .qualified-card h3 {
   margin: 0;
   font-family: var(--font-display), Georgia, serif;
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 400;
 }
 .qualified-card p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.76);
+  color: var(--muted);
   font-size: 1rem;
 }
 
 .guide-section {
-  background: #0d0e11;
-  color: white;
+  background: var(--paper);
+  color: var(--ink);
 }
 .guide-section .eyebrow {
-  color: var(--yellow);
+  color: var(--brown);
 }
 .guide-section h2 span {
   color: var(--sky);
 }
 .guide-section .section-lede {
-  color: rgba(255, 255, 255, 0.62);
+  color: var(--muted);
 }
 .guide-list {
   counter-reset: guide;
   margin-top: 3.4rem;
-  border-top: 1px solid var(--dark-line);
+  border-top: 1px solid var(--line);
 }
 .guide-list details {
   counter-increment: guide;
-  border-bottom: 1px solid var(--dark-line);
+  border-bottom: 1px solid var(--line);
 }
 .guide-list summary {
   min-height: 98px;
@@ -503,8 +515,8 @@ img {
   cursor: pointer;
   list-style: none;
   font-family: var(--font-display), Georgia, serif;
-  font-size: clamp(1.55rem, 2.6vw, 2.25rem);
-  font-weight: 350;
+  font-size: clamp(1.25rem, 1.8vw, 1.65rem);
+  font-weight: 400;
   line-height: 1.12;
 }
 .guide-list summary::before {
@@ -519,7 +531,7 @@ img {
   display: none;
 }
 .guide-list summary svg {
-  color: var(--yellow);
+  color: var(--brown);
   transition: transform 180ms ease;
 }
 .guide-list details[open] summary svg {
@@ -541,11 +553,11 @@ img {
 .detail-grid .full {
   grid-column: 1 / -1;
   padding-top: 1.4rem;
-  border-top: 1px solid var(--dark-line);
+  border-top: 1px solid var(--line);
 }
 .detail-grid h3 {
   margin: 0 0 0.4rem;
-  color: white;
+  color: var(--ink);
   font-size: 0.95rem;
   font-weight: 650;
 }
@@ -553,13 +565,13 @@ img {
 .details-copy p,
 .schedule-wrap > p {
   margin: 0;
-  color: rgba(255, 255, 255, 0.67);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 .detail-grid ul {
   margin: 0.35rem 0 0;
   padding-left: 1.2rem;
-  color: rgba(255, 255, 255, 0.67);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 .check-list {
@@ -574,7 +586,7 @@ img {
   display: flex;
   align-items: flex-start;
   gap: 0.55rem;
-  color: rgba(255, 255, 255, 0.67);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 .check-list svg {
@@ -594,21 +606,21 @@ img {
   grid-template-columns: 108px 1fr;
   align-items: center;
   gap: 0.8rem;
-  border-bottom: 1px solid var(--dark-line);
+  border-bottom: 1px solid var(--line);
 }
 .schedule time {
-  color: var(--yellow);
+  color: var(--brown);
   font-size: 0.82rem;
   font-weight: 600;
   font-variant-numeric: tabular-nums;
 }
 .schedule span {
-  color: rgba(255, 255, 255, 0.72);
+  color: var(--muted);
   font-size: 0.9rem;
 }
 
 .fees-section {
-  background: #f1d376;
+  background: var(--cream);
 }
 .fees-section .eyebrow {
   color: #74502d;
@@ -617,25 +629,25 @@ img {
   color: #be5d4d;
 }
 .fees-section .section-lede {
-  color: #665c4b;
+  color: var(--muted);
 }
 .fees-grid {
   display: grid;
   grid-template-columns: 0.82fr 1.18fr;
   margin-top: 3.2rem;
-  border: 1px solid rgba(40, 40, 45, 0.28);
+  border: 1px solid var(--line);
 }
 .fee-card,
 .registration-card {
   padding: clamp(1.8rem, 4vw, 3rem);
 }
 .fee-card {
-  background: var(--ink);
-  color: white;
+  background: #fff4cf;
+  color: var(--ink);
 }
 .registration-card {
-  border-left: 1px solid rgba(40, 40, 45, 0.28);
-  background: #f8f8f4;
+  border-left: 1px solid var(--line);
+  background: #e8f6fb;
 }
 .fee-card small,
 .registration-card small {
@@ -645,7 +657,7 @@ img {
   text-transform: uppercase;
 }
 .fee-card small {
-  color: var(--yellow);
+  color: var(--brown);
 }
 .registration-card small {
   color: var(--brown);
@@ -654,7 +666,7 @@ img {
 .registration-card h3 {
   margin: 0.32rem 0 1.4rem;
   font-family: var(--font-display), Georgia, serif;
-  font-size: 2.25rem;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.05;
 }
@@ -664,10 +676,10 @@ img {
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.24);
+  border-top: 1px solid rgba(36, 48, 74, 0.18);
 }
 .fee-row span {
-  color: rgba(255, 255, 255, 0.7);
+  color: var(--muted);
   font-size: 0.92rem;
 }
 .fee-row strong {
@@ -677,7 +689,7 @@ img {
 }
 .fee-card > p {
   margin: 1.2rem 0 0;
-  color: rgba(255, 255, 255, 0.64);
+  color: var(--muted);
   font-size: 0.88rem;
 }
 .registration-card ul {
@@ -730,7 +742,7 @@ img {
 }
 .policy-list h3 {
   font-family: var(--font-display), Georgia, serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 450;
 }
 .policy-list p {
@@ -744,15 +756,15 @@ img {
 .contact-card {
   margin: 0;
   padding: 0;
-  background: var(--sky);
+  background: var(--paper);
 }
 .contact-inner {
-  min-height: 490px;
+  min-height: 405px;
   display: grid;
   grid-template-columns: 170px minmax(0, 0.9fr) minmax(320px, 0.7fr);
   align-items: center;
   gap: clamp(2rem, 6vw, 6rem);
-  padding-block: clamp(4.5rem, 8vw, 7rem);
+  padding-block: clamp(3.5rem, 6vw, 5rem);
 }
 .contact-bears {
   align-self: end;
@@ -775,12 +787,12 @@ img {
 }
 .contact-card h2 {
   max-width: 580px;
-  font-size: clamp(3.6rem, 6vw, 5.8rem);
+  font-size: clamp(2.6rem, 4vw, 3.8rem);
 }
 .contact-copy > p:not(.eyebrow):not(.contact-hours) {
   max-width: 520px;
   margin: 1rem 0 0;
-  color: #395561;
+  color: var(--muted);
   font-size: 1rem;
 }
 .contact-links {
@@ -794,7 +806,7 @@ img {
   align-items: center;
   gap: 0.75rem;
   padding: 0.9rem 1rem;
-  border: 1px solid rgba(40, 40, 45, 0.7);
+  border: 1px solid var(--line);
   border-radius: 5px;
   color: var(--ink);
   font-size: 0.88rem;
@@ -811,24 +823,24 @@ img {
 .contact-links small {
   display: block;
   margin-bottom: 0.08rem;
-  color: #446977;
+  color: var(--muted);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .contact-call {
-  background: rgba(255, 255, 255, 0.56);
+  background: #dff3fb;
 }
 .contact-email {
-  background: var(--coral);
+  background: #fde6e2;
 }
 .contact-hours {
   display: flex;
   align-items: center;
   gap: 0.42rem;
   margin: 1.1rem 0 0;
-  color: #395d69;
+  color: var(--muted);
   font-size: 0.82rem;
   font-weight: 550;
 }
@@ -946,7 +958,7 @@ footer > .shell > a:last-child {
     padding-block: 4rem;
   }
   .hero h1 {
-    font-size: clamp(3.7rem, 16vw, 5.5rem);
+    font-size: clamp(3rem, 12vw, 4.1rem);
   }
   .facts-grid {
     grid-template-columns: 1fr;
@@ -964,7 +976,7 @@ footer > .shell > a:last-child {
     border-bottom: 0;
   }
   .section h2 {
-    font-size: clamp(3.15rem, 13vw, 4.7rem);
+    font-size: clamp(2.4rem, 10vw, 3.3rem);
   }
   .intro-grid,
   .detail-grid,
@@ -975,6 +987,9 @@ footer > .shell > a:last-child {
   }
   .intro-grid {
     gap: 1.5rem;
+  }
+  .program-photo {
+    width: 100%;
   }
   .qualified-card {
     grid-template-columns: 1fr;
@@ -1034,7 +1049,7 @@ footer > .shell > a:last-child {
     font-size: 0;
   }
   .hero h1 {
-    font-size: 3.65rem;
+    font-size: 3rem;
   }
   .lede {
     font-size: 1.02rem;
@@ -1048,7 +1063,7 @@ footer > .shell > a:last-child {
     gap: 0.1rem;
   }
   .section-inner {
-    padding-block: 5rem;
+    padding-block: 4rem;
   }
   .development-grid {
     grid-template-columns: 1fr;
@@ -1070,13 +1085,13 @@ footer > .shell > a:last-child {
   .guide-list summary {
     min-height: 84px;
     grid-template-columns: 30px 1fr auto;
-    font-size: 1.45rem;
+    font-size: 1.25rem;
   }
   .registration-card ul {
     grid-template-columns: 1fr;
   }
   .contact-card h2 {
-    font-size: 3.6rem;
+    font-size: 2.7rem;
   }
   footer .shell {
     align-items: flex-start;

@@ -170,6 +170,17 @@ export default function Home() {
                 </p>
               </div>
 
+              <figure className="program-photo">
+                <img
+                  src="/bears-house-learning-space.jpg"
+                  alt="A bright Bear’s House indoor learning space with toys, child-sized furniture, and play areas"
+                  width="1600"
+                  height="1139"
+                  loading="lazy"
+                />
+                <figcaption>Our indoor learning space.</figcaption>
+              </figure>
+
               <div
                 className="development-grid"
                 aria-label="Four areas of development"
