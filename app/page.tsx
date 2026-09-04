@@ -79,11 +79,12 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-inner shell">
           <div className="hero-copy">
-            <p className="eyebrow">More than two decades of experience</p>
-            <h1 id="hero-title">Know your child is in good hands.</h1>
+            <p className="eyebrow">Serving Metro Vancouver since 2003</p>
+            <h1 id="hero-title">Bear’s House Childcare</h1>
+            <p className="hero-tagline">Know your child is in good hands.</p>
             <p className="lede">
-              Bear’s House has cared for Metro Vancouver families since 2003,
-              with programs for children from 3 to 36 months.
+              More than two decades of experience caring for children from 3
+              to 36 months.
             </p>
             <div className="hero-actions">
               <a

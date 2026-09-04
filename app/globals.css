@@ -232,9 +232,18 @@ img {
   line-height: 0.98;
   letter-spacing: -0.045em;
 }
+.hero-tagline {
+  margin: 1rem auto 0;
+  color: var(--brown);
+  font-family: var(--font-display), Georgia, serif;
+  font-size: clamp(1.3rem, 2vw, 1.65rem);
+  font-weight: 450;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+}
 .lede {
   max-width: 610px;
-  margin: 1.35rem auto 0;
+  margin: 0.7rem auto 0;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.55;
