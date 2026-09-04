@@ -80,10 +80,10 @@ export default function Home() {
         <div className="hero-inner shell">
           <img
             className="hero-bear hero-bear--left"
-            src="/bear-left.png"
+            src="/bear-right.png"
             alt=""
-            width="269"
-            height="364"
+            width="277"
+            height="361"
             aria-hidden="true"
           />
           <div className="hero-copy">
@@ -111,10 +111,10 @@ export default function Home() {
           </div>
           <img
             className="hero-bear hero-bear--right"
-            src="/bear-right.png"
+            src="/bear-left.png"
             alt=""
-            width="277"
-            height="361"
+            width="269"
+            height="364"
             aria-hidden="true"
           />
         </div>
