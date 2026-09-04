@@ -78,6 +78,14 @@ export default function Home() {
 
       <section className="hero" aria-labelledby="hero-title">
         <div className="hero-inner shell">
+          <img
+            className="hero-bear hero-bear--left"
+            src="/bear-left.png"
+            alt=""
+            width="269"
+            height="364"
+            aria-hidden="true"
+          />
           <div className="hero-copy">
             <p className="eyebrow">Serving Metro Vancouver since 2003</p>
             <h1 id="hero-title">Bear’s House Childcare</h1>
@@ -101,6 +109,14 @@ export default function Home() {
               </a>
             </div>
           </div>
+          <img
+            className="hero-bear hero-bear--right"
+            src="/bear-right.png"
+            alt=""
+            width="277"
+            height="361"
+            aria-hidden="true"
+          />
         </div>
       </section>
 

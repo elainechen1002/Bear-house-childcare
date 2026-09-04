@@ -205,12 +205,27 @@ img {
   background: var(--sky);
 }
 .hero-inner {
+  position: relative;
   min-height: calc(100vh - 77px);
   min-height: calc(100svh - 77px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding-block: clamp(4.5rem, 8vw, 7rem);
+}
+.hero-bear {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  height: clamp(120px, 14vw, 168px);
+  object-fit: contain;
+  transform: translateY(-48%);
+}
+.hero-bear--left {
+  left: 0;
+}
+.hero-bear--right {
+  right: 0;
 }
 .eyebrow {
   margin: 0 0 1rem;
@@ -895,6 +910,9 @@ footer > .shell > a:last-child {
 }
 
 @media (max-width: 980px) {
+  .hero-bear {
+    display: none;
+  }
   .hero-inner {
     min-height: calc(100vh - 77px);
     min-height: calc(100svh - 77px);
